@@ -1,0 +1,1 @@
+opulence.common @ git+ssh://git@github.com/opullence/common.git@master
