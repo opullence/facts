@@ -1,29 +1,8 @@
+import json
+
+from opulence.common.fields.baseField import BaseField
 from opulence.common.plugins.basePlugin import BasePlugin
 from opulence.common.plugins.exceptions import NotInstanciable
-
-
-class Field:
-    def __init__(self, default=None, mandatory=True):
-        self._value = default
-        self._mandatory = mandatory
-
-    def __hash__(self):
-        return hash(self.value)
-
-    def __eq__(self, other):
-        return self.__class__ == other.__class__ and self.value == other.value
-
-    @property
-    def value(self):
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        self._value = value
-
-    @property
-    def mandatory(self):
-        return self._mandatory
 
 
 class BaseFact(BasePlugin):
@@ -74,7 +53,7 @@ class BaseFact(BasePlugin):
         return {
             field: self.__dict__[field]
             for field in self.__dict__
-            if isinstance(self.__dict__[field], Field)
+            if isinstance(self.__dict__[field], BaseField)
         }
 
     def get_info(self):
@@ -83,3 +62,6 @@ class BaseFact(BasePlugin):
             fields.append({"name": key, "mandatory": data.mandatory})
         data = {"fields": fields}
         return {**super().get_info(), **data}
+
+    def to_json(self):
+        return json.dumps(self.get_info())

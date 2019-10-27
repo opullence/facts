@@ -1,3 +1,3 @@
-from .baseFact import BaseFact, Field
+from .baseFact import BaseFact
 
-__all__ = [Field, BaseFact]
+__all__ = [BaseFact]
