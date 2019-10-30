@@ -1,5 +1,5 @@
 from opulence.common.fields import StringField
-from opulence.facts import BaseFact
+from opulence.common.bases import BaseFact
 
 
 class Person(BaseFact):
@@ -10,5 +10,5 @@ class Person(BaseFact):
 
     def setup(self):
         self.sdf = StringField(mandatory=False)
-        self.lastname = StringField()
-        self.firstname = StringField()
+        self.lastname = StringField(mandatory=True, default="John")
+        self.firstname = StringField(mandatory=True, default="Snow")
