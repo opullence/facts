@@ -1,5 +1,5 @@
-from opuelence.common.bases.baseFact import BaseFact
-from ipulence.common.fields import StringField
+from opulence.common.bases.baseFact import BaseFact
+from opulence.common.fields import StringField
 
 
 class Person(BaseFact):
