@@ -1,4 +1,5 @@
-from . import BaseFact, Field
+from opuelence.common.bases.baseFact import BaseFact
+from ipulence.common.fields import StringField
 
 
 class Person(BaseFact):
@@ -8,6 +9,6 @@ class Person(BaseFact):
     _version_ = 1
 
     def setup(self):
-        self.sdf = Field(mandatory=False)
-        self.lastname = Field()
-        self.firstname = Field()
+        self.sdf = StringField(mandatory=False)
+        self.lastname = StringField(default="John")
+        self.firstname = StringField(default="Snow")
