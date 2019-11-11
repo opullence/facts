@@ -17,5 +17,5 @@ setup(
     license=license,
     packages=find_namespace_packages(include=["opulence.*"]),
     install_requires=requirements,
-    python_requires=">=3.6.*, <4",
+    python_requires=">=3.5.*, <4",
 )

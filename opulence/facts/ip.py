@@ -11,6 +11,7 @@ class IPv4(BaseFact):
     def setup(self):
         self.address = StringField(mandatory=True)
 
+
 class IPv6(BaseFact):
     _name_ = "IPv6"
     _description_ = "Represent an IP address version 6"
