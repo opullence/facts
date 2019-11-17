@@ -9,6 +9,6 @@ class SocialProfile(BaseFact):
     _version_ = 1
 
     def setup(self):
-        self.username = StringField(mandatory=True)
-        self.url = StringField(mandatory=True)
+        self.username = StringField(mandatory=True, default="johnsnow")
+        self.url = StringField(mandatory=True, default="http://example.com")
         self.site = StringField()

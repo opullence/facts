@@ -9,5 +9,5 @@ class Person(BaseFact):
     _version_ = 1
 
     def setup(self):
-        self.lastname = StringField(mandatory=True)
-        self.firstname = StringField(mandatory=True)
+        self.lastname = StringField(mandatory=True, default="John")
+        self.firstname = StringField(mandatory=True, default="Snow")

@@ -9,5 +9,5 @@ class Domain(BaseFact):
     _version_ = 1
 
     def setup(self):
-        self.fqdn = StringField(mandatory=True)
+        self.fqdn = StringField(mandatory=True, default="example.com")
         self.whois = StringField()

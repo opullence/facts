@@ -9,6 +9,6 @@ class Port(BaseFact):
     _version_ = 1
 
     def setup(self):
-        self.number = IntegerField(mandatory=True)
+        self.number = IntegerField(mandatory=True, default=80)
         self.state = StringField()
         self.proto = StringField()

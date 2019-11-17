@@ -9,7 +9,7 @@ class IPv4(BaseFact):
     _version_ = 1
 
     def setup(self):
-        self.address = StringField(mandatory=True)
+        self.address = StringField(mandatory=True, default="127.0.0.1")
 
 
 class IPv6(BaseFact):
@@ -19,4 +19,4 @@ class IPv6(BaseFact):
     _version_ = 1
 
     def setup(self):
-        self.address = StringField(mandatory=True)
+        self.address = StringField(mandatory=True, default="127.0.0.1")

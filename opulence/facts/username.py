@@ -9,4 +9,4 @@ class Username(BaseFact):
     _version_ = 1
 
     def setup(self):
-        self.name = StringField(mandatory=True)
+        self.name = StringField(mandatory=True, default="JohnSnow")
