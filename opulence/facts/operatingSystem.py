@@ -9,4 +9,6 @@ class OperatingSystem(BaseFact):
     _version_ = 1
 
     def setup(self):
-        self.address = StringField(mandatory=True, default="127.0.0.1")
+        self.family = StringField(mandatory=True, default="Windows 10")
+        self.vendor = StringField(mandatory=True, default="Microsoft")
+        self.version = StringField()
