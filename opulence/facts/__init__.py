@@ -5,5 +5,6 @@ from .port import Port
 from .socialProfile import SocialProfile
 from .username import Username
 from .operatingSystem import OperatingSystem
+from .file import File
 
-__all__ = [Username, SocialProfile, Port, Person, IPv6, IPv4, Domain, OperatingSystem]
+__all__ = [Username, SocialProfile, Port, Person, IPv6, IPv4, Domain, OperatingSystem, File]
