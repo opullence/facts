@@ -10,7 +10,7 @@ class File(BaseFact):
 
     def setup(self):
         self.filename = StringField(mandatory=True)
-        self.extension = StringField(mandatory=False)
-        self.hash = StringField(mandatory=False)
-        self.fullPath = StringField(mandatory=False)
-        self.relativePath = StringField(mandatory=False)
+        self.extension = StringField()
+        self.hash = StringField()
+        self.fullPath = StringField()
+        self.relativePath = StringField()
