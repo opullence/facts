@@ -6,5 +6,17 @@ from .socialProfile import SocialProfile
 from .username import Username
 from .operatingSystem import OperatingSystem
 from .file import File
+from .waf import Waf
 
-__all__ = [Username, SocialProfile, Port, Person, IPv6, IPv4, Domain, OperatingSystem, File]
+
+__all__ = [
+    Username,
+    SocialProfile,
+    Port,
+    Person,
+    IPv6,
+    IPv4,
+    Domain,
+    OperatingSystem,
+    File,
+    Waf]
