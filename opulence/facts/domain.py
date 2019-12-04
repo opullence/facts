@@ -11,3 +11,4 @@ class Domain(BaseFact):
     def setup(self):
         self.fqdn = StringField(mandatory=True, default="example.com")
         self.whois = StringField()
+        self.ip = StringField()

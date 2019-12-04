@@ -7,7 +7,7 @@ from .username import Username
 from .operatingSystem import OperatingSystem
 from .file import File
 from .waf import Waf
-
+from .uri import URI
 
 __all__ = [
     Username,
@@ -19,4 +19,6 @@ __all__ = [
     Domain,
     OperatingSystem,
     File,
-    Waf]
+    Waf,
+    URI
+]
