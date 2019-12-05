@@ -6,6 +6,12 @@ from .person import Person
 from .port import Port
 from .socialProfile import SocialProfile
 from .username import Username
+from .operatingSystem import OperatingSystem
+from .file import File
+from .waf import Waf
+from .uri import URI
+from .cve import CVE
+from .vuldb import VulDB
 
 __all__ = [
     Username,
@@ -17,4 +23,8 @@ __all__ = [
     Domain,
     OperatingSystem,
     File,
+    Waf,
+    URI,
+    CVE,
+    VulDB
 ]
