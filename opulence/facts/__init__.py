@@ -8,6 +8,8 @@ from .operatingSystem import OperatingSystem
 from .file import File
 from .waf import Waf
 from .uri import URI
+from .cve import CVE
+from .vuldb import VulDB
 
 __all__ = [
     Username,
@@ -20,5 +22,7 @@ __all__ = [
     OperatingSystem,
     File,
     Waf,
-    URI
+    URI,
+    CVE,
+    VulDB
 ]
