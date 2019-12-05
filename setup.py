@@ -8,7 +8,7 @@ with open("requirements/production.txt") as f:
 
 setup(
     name="opulence.facts",
-    version="0.0.5",
+    version="0.0.6",
     description="Facts are used to represent intelligence",
     long_description=readme,
     author="Opulence",
