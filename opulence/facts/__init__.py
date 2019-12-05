@@ -1,3 +1,4 @@
+from .cve import CVE
 from .domain import Domain
 from .file import File
 from .ip import IPv4, IPv6
@@ -5,13 +6,10 @@ from .operatingSystem import OperatingSystem
 from .person import Person
 from .port import Port
 from .socialProfile import SocialProfile
-from .username import Username
-from .operatingSystem import OperatingSystem
-from .file import File
-from .waf import Waf
 from .uri import URI
-from .cve import CVE
+from .username import Username
 from .vuldb import VulDB
+from .waf import Waf
 
 __all__ = [
     Username,
@@ -26,5 +24,5 @@ __all__ = [
     Waf,
     URI,
     CVE,
-    VulDB
+    VulDB,
 ]
