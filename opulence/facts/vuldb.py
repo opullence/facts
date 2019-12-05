@@ -1,5 +1,5 @@
 from opulence.common.facts import BaseFact
-from opulence.common.fields import IntegerField
+from opulence.common.fields import IntegerField, StringField
 
 
 class VulDB(BaseFact):
