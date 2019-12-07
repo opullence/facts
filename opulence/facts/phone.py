@@ -12,8 +12,9 @@ class Phone(BaseFact):
         self.number = StringField(mandatory=True, default="+33 6 42 42 42 42")
         self.carrier = StringField()
         self.localformat = StringField()
+        self.line_type = StringField()
 
-        self.countrycode = StringField()
-        self.citycode = StringField()
-        self.areacode = StringField()
+        self.country_code = StringField()
+        self.city_code = StringField()
+        self.area_code = StringField()
         self.rest = StringField()

@@ -14,6 +14,7 @@ from .email import Email
 from .tweet import Tweet
 from .phone import Phone
 from .country import Country
+from .banner import Banner
 
 __all__ = [
     Username,
@@ -33,4 +34,5 @@ __all__ = [
     Tweet,
     Phone,
     Country,
+    Banner
 ]

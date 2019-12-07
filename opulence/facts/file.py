@@ -10,6 +10,7 @@ class File(BaseFact):
 
     def setup(self):
         self.filename = StringField(mandatory=True)
+        self.url = StringField()
         self.extension = StringField()
         self.hash = StringField()
         self.fullPath = StringField()
