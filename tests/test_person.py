@@ -1,6 +1,6 @@
 import unittest
 
-from opulence.facts.person import Person
+from opulence.facts import Person
 
 
 class TestPerson(unittest.TestCase):

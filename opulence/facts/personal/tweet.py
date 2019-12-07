@@ -12,4 +12,4 @@ class Tweet(BaseFact):
         self.id = IntegerField(mandatory=True)
         self.message = StringField(mandatory=True)
         self.author = StringField(mandatory=True)
-        self.date = StringField(mandatory=True) # DateField ?
+        self.date = StringField(mandatory=True)  # DateField ?

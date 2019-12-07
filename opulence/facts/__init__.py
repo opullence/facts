@@ -1,20 +1,26 @@
-from .cve import CVE
-from .domain import Domain
-from .file import File
-from .ip import IPv4, IPv6
-from .operatingSystem import OperatingSystem
-from .person import Person
-from .port import Port
-from .socialProfile import SocialProfile
+
+from .nist.cve import CVE
+from .nist.cpe import CPE
+
+from .infrastructure.domain import Domain
+from .infrastructure.file import File
+from .infrastructure.ip import IPv4, IPv6
+from .infrastructure.operatingSystem import OperatingSystem
+from .infrastructure.banner import Banner
+from .infrastructure.port import Port
+from .infrastructure.waf import Waf
+
+from .personal.person import Person
+from .personal.socialProfile import SocialProfile
+from .personal.email import Email
+from .personal.tweet import Tweet
+from .personal.phone import Phone
+from .personal.username import Username
+
+from .geo.country import Country
+
 from .uri import URI
-from .username import Username
 from .vuldb import VulDB
-from .waf import Waf
-from .email import Email
-from .tweet import Tweet
-from .phone import Phone
-from .country import Country
-from .banner import Banner
 from .organization import Organization
 
 __all__ = [
@@ -35,5 +41,6 @@ __all__ = [
     Tweet,
     Phone,
     Country,
-    Banner
+    Banner,
+    Organization
 ]

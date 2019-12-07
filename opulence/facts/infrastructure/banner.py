@@ -1,5 +1,5 @@
 from opulence.common.facts import BaseFact
-from opulence.common.fields import StringField
+from opulence.common.fields import StringField, IntegerField
 
 
 class Banner(BaseFact):
@@ -13,4 +13,5 @@ class Banner(BaseFact):
 
     def setup(self):
         self.message = StringField(mandatory=True, default="Hello world")
-        self.protocol = StringField()
+        self.port = IntegerField()
+        self.product = StringField()

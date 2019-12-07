@@ -4,7 +4,7 @@ from opulence.common.fields import StringField
 
 class CVE(BaseFact):
     _name_ = "CVE"
-    _description_ = "Common vulnerabilities exposures identifier"
+    _description_ = "Common vulnerabilities exposures identifier standart (nist)"
     _author_ = "Louis"
     _version_ = 1
 
