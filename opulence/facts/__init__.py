@@ -18,7 +18,7 @@ from .personal.phone import Phone
 from .personal.username import Username
 
 from .geo.country import Country
-
+from .geo.geoCoordinates import GeoCoordinates
 from .uri import URI
 from .vuldb import VulDB
 from .organization import Organization
@@ -42,5 +42,6 @@ __all__ = [
     Phone,
     Country,
     Banner,
-    Organization
+    Organization,
+    GeoCoordinates
 ]
