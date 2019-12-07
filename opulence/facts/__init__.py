@@ -15,6 +15,7 @@ from .tweet import Tweet
 from .phone import Phone
 from .country import Country
 from .banner import Banner
+from .organization import Organization
 
 __all__ = [
     Username,
