@@ -11,4 +11,4 @@ class Port(BaseFact):
     def setup(self):
         self.number = IntegerField(mandatory=True, default=80)
         self.state = StringField()
-        self.proto = StringField()
+        self.transport = StringField()

@@ -9,6 +9,7 @@ from .infrastructure.operatingSystem import OperatingSystem
 from .infrastructure.banner import Banner
 from .infrastructure.port import Port
 from .infrastructure.waf import Waf
+from .infrastructure.asn import ASN
 
 from .personal.person import Person
 from .personal.socialProfile import SocialProfile
@@ -43,5 +44,6 @@ __all__ = [
     Country,
     Banner,
     Organization,
-    GeoCoordinates
+    GeoCoordinates,
+    ASN
 ]
