@@ -13,5 +13,4 @@ class ASN(BaseFact):
 
     def setup(self):
         self.id = StringField(mandatory=True, default="AS8426")
-        self.port = IntegerField()
-        self.product = StringField()
+        self.organization = StringField()
