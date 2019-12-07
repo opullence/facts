@@ -1,5 +1,5 @@
 from opulence.common.facts import BaseFact
-from opulence.common.fields import IntegerField
+from opulence.common.fields import FloatField
 
 
 class GeoCoordinates(BaseFact):
@@ -9,5 +9,5 @@ class GeoCoordinates(BaseFact):
     _version_ = 1
 
     def setup(self):
-        self.latitude = IntegerField(mandatory=True, default=42)
-        self.longitude = IntegerField(mandatory=True, default=42)
+        self.latitude = FloatField(mandatory=True, default=42)
+        self.longitude = FloatField(mandatory=True, default=42)
