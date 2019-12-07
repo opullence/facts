@@ -12,6 +12,8 @@ from .vuldb import VulDB
 from .waf import Waf
 from .email import Email
 from .tweet import Tweet
+from .phone import Phone
+from .country import Country
 
 __all__ = [
     Username,
@@ -29,4 +31,6 @@ __all__ = [
     VulDB,
     Email,
     Tweet
+    Phone,
+    Country
 ]
