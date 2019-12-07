@@ -30,7 +30,7 @@ __all__ = [
     CVE,
     VulDB,
     Email,
-    Tweet
+    Tweet,
     Phone,
-    Country
+    Country,
 ]
