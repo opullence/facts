@@ -10,5 +10,5 @@ class SocialProfile(BaseFact):
 
     def setup(self):
         self.username = StringField(mandatory=True, default="johnsnow")
-        self.url = StringField(mandatory=True, default="http://example.com")
-        self.site = StringField()
+        self.site = StringField(mandatory=True, default="spotify")
+        self.url = StringField(default="http://example.com")
