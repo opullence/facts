@@ -10,5 +10,5 @@ class Country(BaseFact):
 
     def setup(self):
         self.name = StringField(mandatory=True, default="China")
-        self.short_name = StringField()
+        self.code = StringField()
         self.timezone = StringField()

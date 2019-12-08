@@ -10,6 +10,7 @@ from .infrastructure.banner import Banner
 from .infrastructure.port import Port
 from .infrastructure.waf import Waf
 from .infrastructure.asn import ASN
+from .infrastructure.gitRepository import GitRepository 
 
 from .personal.person import Person
 from .personal.socialProfile import SocialProfile
@@ -45,5 +46,6 @@ __all__ = [
     Banner,
     Organization,
     GeoCoordinates,
-    ASN
+    ASN,
+    GitRepository,
 ]
