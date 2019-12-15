@@ -10,3 +10,6 @@ class Organization(BaseFact):
 
     def setup(self):
         self.name = StringField(mandatory=True, default="Alphabet")
+
+    def brief(self):
+        return "lol"
