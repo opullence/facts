@@ -11,3 +11,6 @@ class CVE(BaseFact):
     def setup(self):
         self.id = StringField(mandatory=True, default="CVE-2019-9815")
         self.description = StringField()
+
+    def get_summary(self):
+        return "{}".format(self.id.value)

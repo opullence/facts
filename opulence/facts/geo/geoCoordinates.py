@@ -11,3 +11,6 @@ class GeoCoordinates(BaseFact):
     def setup(self):
         self.latitude = FloatField(mandatory=True, default=42)
         self.longitude = FloatField(mandatory=True, default=42)
+
+    def get_summary(self):
+        return "{} {}".format(self.latitude.value, self.longitude.value)

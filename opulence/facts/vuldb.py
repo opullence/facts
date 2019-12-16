@@ -11,3 +11,6 @@ class VulDB(BaseFact):
     def setup(self):
         self.id = IntegerField(mandatory=True, default=133852)
         self.description = StringField()
+
+    def get_summary(self):
+        return "{}".format(self.id.value)

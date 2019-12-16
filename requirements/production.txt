@@ -1,1 +1,1 @@
-opulence-common @ git+ssh://git@gitlab.com/opulence/common.git@jurelou/v0.0.8
+opulence-common @ git+ssh://git@gitlab.com/opulence/common.git@v1.0.0

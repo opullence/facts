@@ -9,7 +9,7 @@ class TestPerson(unittest.TestCase):
         self.assertTrue(john.is_valid())
 
         fields = john.get_fields()
-        self.assertEqual(john.plugin_category, "BaseFact")
+        self.assertEqual(john.plugin_category, "fact.personal")
         self.assertTrue("firstname" in fields)
         self.assertTrue("lastname" in fields)
 
@@ -18,7 +18,7 @@ class TestPerson(unittest.TestCase):
         self.assertFalse(john.is_valid())
 
         fields = john.get_fields()
-        self.assertEqual(john.plugin_category, "BaseFact")
+        self.assertEqual(john.plugin_category, "fact.personal")
         self.assertTrue("firstname" in fields)
         self.assertTrue("lastname" in fields)
 
@@ -26,7 +26,7 @@ class TestPerson(unittest.TestCase):
         john = Person(firstname="John")
         self.assertFalse(john.is_valid())
 
-        self.assertEqual(john.plugin_category, "BaseFact")
+        self.assertEqual(john.plugin_category, "fact.personal")
         fields = john.get_fields()
         self.assertTrue("firstname" in fields)
         self.assertTrue("lastname" in fields)

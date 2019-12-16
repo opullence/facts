@@ -10,3 +10,6 @@ class Email(BaseFact):
 
     def setup(self):
         self.address = StringField(mandatory=True, default="john@example.com")
+
+    def get_summary(self):
+        return "{}".format(self.address.value)

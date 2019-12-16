@@ -1,5 +1,5 @@
 from opulence.common.facts import BaseFact
-from opulence.common.fields import StringField, IntegerField
+from opulence.common.fields import IntegerField, StringField
 
 
 class Tweet(BaseFact):
@@ -13,3 +13,6 @@ class Tweet(BaseFact):
         self.message = StringField(mandatory=True)
         self.author = StringField(mandatory=True)
         self.date = StringField(mandatory=True)  # DateField ?
+
+    def get_summary(self):
+        return "{}".format(self.message.value)

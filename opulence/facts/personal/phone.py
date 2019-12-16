@@ -18,3 +18,6 @@ class Phone(BaseFact):
         self.city_code = StringField()
         self.area_code = StringField()
         self.rest = StringField()
+
+    def get_summary(self):
+        return "{}".format(self.number.value)

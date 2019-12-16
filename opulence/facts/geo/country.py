@@ -12,3 +12,6 @@ class Country(BaseFact):
         self.name = StringField(mandatory=True, default="China")
         self.code = StringField()
         self.timezone = StringField()
+
+    def get_summary(self):
+        return "{}".format(self.name.value)

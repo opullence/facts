@@ -11,3 +11,6 @@ class Person(BaseFact):
     def setup(self):
         self.lastname = StringField(mandatory=True, default="John")
         self.firstname = StringField(mandatory=True, default="Snow")
+
+    def get_summary(self):
+        return "{} {}".format(self.firstname.value, self.lastname.value)

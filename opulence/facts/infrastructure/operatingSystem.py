@@ -12,3 +12,6 @@ class OperatingSystem(BaseFact):
         self.family = StringField(mandatory=True, default="Windows 10")
         self.vendor = StringField(mandatory=True, default="Microsoft")
         self.version = StringField()
+
+    def get_summary(self):
+        return "{}".format(self.family.value)

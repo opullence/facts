@@ -12,3 +12,6 @@ class SocialProfile(BaseFact):
         self.username = StringField(mandatory=True, default="johnsnow")
         self.site = StringField(mandatory=True, default="spotify")
         self.url = StringField(default="http://example.com")
+
+    def get_summary(self):
+        return "{}".format(self.site.value)

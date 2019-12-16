@@ -15,3 +15,6 @@ class File(BaseFact):
         self.hash = StringField()
         self.fullPath = StringField()
         self.relativePath = StringField()
+
+    def get_summary(self):
+        return "{}".format(self.filename.value)

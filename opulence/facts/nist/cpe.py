@@ -10,3 +10,6 @@ class CPE(BaseFact):
 
     def setup(self):
         self.id = StringField(mandatory=True, default="cpe:2.3:a:apache:5.0.0:*")
+
+    def get_summary(self):
+        return "{}".format(self.id.value)
