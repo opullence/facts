@@ -12,3 +12,6 @@ class Domain(BaseFact):
         self.fqdn = StringField(mandatory=True, default="example.com")
         self.whois = StringField()
         self.ip = StringField()
+
+    def get_summary(self):
+        return "{}".format(self.fqdn.value)
