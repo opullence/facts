@@ -11,6 +11,9 @@ class IPv4(BaseFact):
     def setup(self):
         self.address = StringField(mandatory=True, default="127.0.0.1")
 
+    def get_summary(self):
+        return "{}".format(self.address.value)
+
 
 class IPv6(BaseFact):
     _name_ = "IPv6"
@@ -20,3 +23,6 @@ class IPv6(BaseFact):
 
     def setup(self):
         self.address = StringField(mandatory=True, default="127.0.0.1")
+
+    def get_summary(self):
+        return "{}".format(self.address.value)

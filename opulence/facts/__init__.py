@@ -1,15 +1,25 @@
-from .cve import CVE
-from .domain import Domain
-from .file import File
-from .ip import IPv4, IPv6
-from .operatingSystem import OperatingSystem
-from .person import Person
-from .port import Port
-from .socialProfile import SocialProfile
+from .geo.country import Country
+from .geo.geoCoordinates import GeoCoordinates
+from .infrastructure.asn import ASN
+from .infrastructure.banner import Banner
+from .infrastructure.domain import Domain
+from .infrastructure.file import File
+from .infrastructure.gitRepository import GitRepository
+from .infrastructure.ip import IPv4, IPv6
+from .infrastructure.operatingSystem import OperatingSystem
+from .infrastructure.port import Port
+from .infrastructure.waf import Waf
+from .nist.cpe import CPE
+from .nist.cve import CVE
+from .organization import Organization
+from .personal.email import Email
+from .personal.person import Person
+from .personal.phone import Phone
+from .personal.socialProfile import SocialProfile
+from .personal.tweet import Tweet
+from .personal.username import Username
 from .uri import URI
-from .username import Username
 from .vuldb import VulDB
-from .waf import Waf
 
 __all__ = [
     Username,
@@ -24,5 +34,15 @@ __all__ = [
     Waf,
     URI,
     CVE,
+    CPE,
     VulDB,
+    Email,
+    Tweet,
+    Phone,
+    Country,
+    Banner,
+    Organization,
+    GeoCoordinates,
+    ASN,
+    GitRepository,
 ]
